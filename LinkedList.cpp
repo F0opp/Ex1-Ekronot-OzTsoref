@@ -1,6 +1,13 @@
 #include "LinkedList.h"
 #include <iostream>
 
+
+/*
+function adds a new node to the beginning of a linked list
+input:	listNode** head - a pointer to the pointer of the head node of the list,
+		int data - the value of the node
+output: none
+*/
 void add(listNode** head, int data)
 {
 	if (!*head)
@@ -18,6 +25,11 @@ void add(listNode** head, int data)
 	}
 }
 
+/*
+function deletes a node from the end of a linked list
+input:	listNode** head - a pointer to the pointer of the head node of the list.
+output: none
+*/
 void del(listNode** head)
 {
 	if (!*head)

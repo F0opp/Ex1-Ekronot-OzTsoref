@@ -6,6 +6,11 @@ using namespace std;
 
 #define ARR_SIZE 10
 
+/*
+function reverses an array using a stack
+input: int* nums - int array to be reversed, unsigned int size - the size of the array 
+output: none
+*/
 void reverse(int* nums, unsigned int size)
 {
 	int i = 0;
@@ -23,6 +28,11 @@ void reverse(int* nums, unsigned int size)
 	}
 }
 
+/*
+function requests 10 numbers from user and inputs them into an array in reverse
+input: none
+output: a flipped int array of the numbers it recived from the user
+*/
 int* reverse10()
 {
 	int i = 0;
@@ -31,7 +41,7 @@ int* reverse10()
 
 	for (i = 0; i < ARR_SIZE; i++)
 	{
-		std:cin >> nums[i];
+		std::cin >> nums[i];
 	}
 
 	reverse(nums, ARR_SIZE);
